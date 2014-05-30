@@ -21,7 +21,7 @@ $.fn.responsiveCarousel = function(options) {
 	}, options);
 	
 	$(document).ready(function() {
-		timerCarousel = setTimeout(function() { $carousel.find('.next').trigger( "click" ); },5000);	
+		this.timerCarousel = setTimeout(function() { $carousel.find('.next').trigger( "click" ); },5000);	
 		responsiveCarousel();
 		
 		//previous link
@@ -42,7 +42,7 @@ $.fn.responsiveCarousel = function(options) {
 			
 			if (Math.abs(carousel_pos)+carousel_width+
 						(carousel_item_width*carousel_width)+
-						((carousel_width*carousel_item_padding)*2) < $carousel.find('.carousel_items').width()) {
+						((carousel_width*carousel_item_padding)*2) <= $carousel.find('.carousel_items').width()) {
 						
 				destination = (carousel_width*carousel_item_width)+((carousel_width*carousel_item_padding)*2);
 				$carousel.find('.carousel_items').animate({left: carousel_pos-destination}, 700);
@@ -53,8 +53,8 @@ $.fn.responsiveCarousel = function(options) {
 			}
 			
 			//automatic clicks
-			clearTimeout (timerCarousel);
-			timerCarousel = setTimeout(function() { $carousel.find('.next').trigger( "click" ); },5000);
+			clearTimeout (this.timerCarousel);
+			this.timerCarousel = setTimeout(function() { $carousel.find('.next').trigger( "click" ); },5000);
 			
 		});
 		
