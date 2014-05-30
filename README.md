@@ -17,6 +17,19 @@ $(document).ready(function() {
 });
 ```
 
+###JS Options
+
+You can pass in an object of options for the following parameters:
+
+Parameter  | Values
+------------- | -------------
+carousel_item_width_default  | (decimal) for the % width of the container each carousel items consumes by default (desktop) [5 items visible]
+carousel_item_padding_default  | (decimal) for the % padding of the container each carousel items consumes by default (desktop)
+carousel_item_width_481  | (decimal) for the % width of the container each carousel items consumes when the window is < 481px [2 items visible]
+carousel_item_padding_481  | (decimal) for the % padding of the container each carousel items consumes when the window is < 481px
+carousel_item_width_768  | (decimal) the % width of the container each carousel items consumes when the window is < 768px > 481px [3 items visible]
+carousel_item_padding_768  | (decimal) for the % padding of the container each carousel items consumes when the window is < 768px > 481px
+
 ###CSS
 
 ```CSS
