@@ -10,7 +10,7 @@ $.fn.responsiveCarousel = function(options) {
 	var carousel_item_width;				//% of carousel for each items width
 	var carousel_item_padding;				//% of carousel for each items padding
 	
-	//settings
+	//settings; defaults to 5 items; 3 items; 2 items at breakpoints
 	var settings = $.extend({
 		carousel_item_width_default: .16,
 		carousel_item_padding_default: .02,
