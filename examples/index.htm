@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Responsive Carousel Test</title>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="../responsiveCarousel.js"></script>
+
+<style>
+#wrapper { width: 80%; margin: 30px auto; }
+
+.carousel { height: auto; }
+.carousel ul { list-style: none; padding: 0; margin: 0; }
+.carousel li { margin: 0; padding: 0; float: left; display: block; }
+.carousel img { width: 100% !important; height: auto !important; -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); margin: 10px 0; }
+.carousel .nav { display: block; width: 4%; height: 100%; float: left; text-indent: -9999px; }
+.carousel .prev { background: url(images/button_prev.jpg) center center no-repeat; background-size: 80%; }
+.carousel .next { background: url(images/button_next.jpg) center center no-repeat; background-size: 80%; }
+.carousel .carousel_items_holder { width:92%; overflow: hidden; float: left;  height: 100%; position: relative; }
+.carousel .carousel_items { position: absolute; }
+</style>
+
+<script>
+$(document).ready(function() {
+	//standard carousel
+	$('#carousel').responsiveCarousel();
+	
+	//overriding defaults
+	$('#carousel_large').responsiveCarousel({carousel_item_width_default: .40, 
+											carousel_item_padding_default: .05, 
+											carousel_item_width_768: .80, 
+											carousel_item_padding_768: .10});
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet suscipit nibh. Cras vulputate feugiat urna. Nulla et nisl nec mauris pellentesque semper. Integer varius est vel lorem dignissim, nec cursus quam imperdiet. Suspendisse potenti. Nullam eu arcu eget urna sagittis ornare sed at augue. Phasellus commodo sollicitudin felis, et facilisis erat ornare eu. </p>
+	
+	<div id="carousel" class="carousel">
+		<a class="nav prev" href="#">prev</a>
+		
+		<div class="carousel_items_holder">
+		  	<ul class="carousel_items">
+		  		<li><img src="images/WP_20140422_10_56_22_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_26_13_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_32_02_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_34_56_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_55_57_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_12_54_10_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_14_05_30_Pro.jpg" /></li>
+		  	</ul>
+		</div>
+		
+		<a class="nav next" href="#">next</a>
+	</div>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet suscipit nibh. Cras vulputate feugiat urna. Nulla et nisl nec mauris pellentesque semper. Integer varius est vel lorem dignissim, nec cursus quam imperdiet. Suspendisse potenti. Nullam eu arcu eget urna sagittis ornare sed at augue. Phasellus commodo sollicitudin felis, et facilisis erat ornare eu. </p>
+	
+	<div id="carousel_large" class="carousel">
+		<a class="nav prev" href="#">prev</a>
+		
+		<div class="carousel_items_holder">
+		  	<ul class="carousel_items">
+		  		<li><img src="images/WP_20140422_10_56_22_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_26_13_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_32_02_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_34_56_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_11_55_57_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_12_54_10_Pro.jpg" /></li>
+		  		<li><img src="images/WP_20140422_14_05_30_Pro.jpg" /></li>
+		  	</ul>
+		</div>
+		
+		<a class="nav next" href="#">next</a>
+	</div>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet suscipit nibh. Cras vulputate feugiat urna. Nulla et nisl nec mauris pellentesque semper. Integer varius est vel lorem dignissim, nec cursus quam imperdiet. Suspendisse potenti. Nullam eu arcu eget urna sagittis ornare sed at augue. Phasellus commodo sollicitudin felis, et facilisis erat ornare eu. </p>
+	
+</div>
+
+</body>
+</html>
