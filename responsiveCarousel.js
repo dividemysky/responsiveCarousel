@@ -3,9 +3,9 @@
 $.fn.responsiveCarousel = function(options) {
 
 	//global
-	var window_width = $(window).width(); 	//window width
-	var $carousel = this;					//carousel element, to define in dom.ready
-	var carousel_pos; 						//carousel position in the holder
+	var window_width = $(window).width();	//window width
+	var $carousel = this;					//carousel element
+	var carousel_pos;						//carousel position in the holder
 	var carousel_width;						//width
 	var carousel_item_width;				//% of carousel for each items width
 	var carousel_item_padding;				//% of carousel for each items padding
@@ -68,10 +68,10 @@ $.fn.responsiveCarousel = function(options) {
 	
 	function responsiveCarousel() {
 		window_width = $(window).width();
-		carousel_pos = $carousel.find('.carousel_items').position().left;	//carousel position in the holder
-		carousel_width = $carousel.find('.carousel_items_holder').width();	//carousel holder width
-		carousel_item_width = settings.carousel_item_width_default;  				//default % width of carousel
-		carousel_item_padding = settings.carousel_item_padding_default;				//default % width of carousel
+		carousel_pos = $carousel.find('.carousel_items').position().left;		//carousel position in the holder
+		carousel_width = $carousel.find('.carousel_items_holder').width();		//carousel holder width
+		carousel_item_width = settings.carousel_item_width_default;				//default % width of carousel
+		carousel_item_padding = settings.carousel_item_padding_default;			//default % width of carousel
 		
 		//repsonsive breakpoints
 		if (window_width < 481) {
