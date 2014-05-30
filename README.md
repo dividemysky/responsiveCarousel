@@ -37,7 +37,7 @@ carousel_item_padding_768  | (decimal) for the % padding of the container each c
 #carousel ul { list-style: none; padding: 0; margin: 0; }
 #carousel li { margin: 0; padding: 0; float: left; display: block; }
 #carousel img { width: 100% !important; height: auto !important; }
-#carousel .nav { display: block; width: 4%; height: 100%; float: left; text-indent: -9999px; }
+#carousel .nav { display: block; width: 4%; height: 100%; float: left; }
 #carousel .carousel_items_holder { width:92%; overflow: hidden; float: left;  height: 100%; position: relative; }
 #carousel .carousel_items { position: absolute; }
 ```
