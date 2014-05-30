@@ -66,6 +66,11 @@ $.fn.responsiveCarousel = function(options) {
 		responsiveCarousel();
 	});
 	
+	//make sure everything is the correct height after loading
+	$(window).load(function() {
+		responsiveCarousel();
+	});
+	
 	function responsiveCarousel() {
 		window_width = $(window).width();
 		carousel_pos = $carousel.find('.carousel_items').position().left;		//carousel position in the holder
