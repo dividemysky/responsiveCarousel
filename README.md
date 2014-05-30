@@ -5,6 +5,8 @@ A simple responsive carousel plugin for jQuery.
 
 This plugin defaults to 3 responsive breakpoints; < 481, < 768 and a default desktop size.
 
+<a href="http://htmlpreview.github.io/?https://github.com/dividemysky/responsiveCarousel/blob/master/examples/index.htm" target="_blank">View a demo here</a>
+
 ##Usage
 
 To use this plugin, simply incude after jquery, and use the following HTML/CSS/JS Markup:
